@@ -1,15 +1,46 @@
-.git
-.gitignore
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Tests & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Build/packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual envs
 venv/
 .venv/
-migrations/**/__pycache__/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Git
+.git
+.gitignore
+
+# Django artifacts
+*.sqlite3
+media/
 static/
 staticfiles/
-media/
+# keep migrations, but ignore their caches only
+migrations/**/__pycache__/
+
+# Env files / secrets
 .env
-.DS_Store
+*.env
